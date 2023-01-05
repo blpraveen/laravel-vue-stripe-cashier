@@ -37,7 +37,7 @@
                         ></h2>
                         <p
                             class="mt-1"
-                            v-text="formatCurrency(product.price)"
+                            v-text="formatCurrency(product.price)" 
                         ></p>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
         methods: {
             formatCurrency(amount) {
                 amount = (amount / 100);
-                return amount.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                return amount.toLocaleString('en-US', { style: 'currency', currency: 'INR' });
             }
         },
         computed: {
